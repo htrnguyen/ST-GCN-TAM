@@ -1,4 +1,14 @@
-# GCN-for-Human-Action-Recognition
-- Nhận dạng hành động người là một nhiệm vụ quan trọng trong lĩnh vực thị giác máy tính. Trong công trình này chúng tôi tập trung vào việc nhận dạng hành động người dựa vào khung xương bằng việc áp dụng kiến trúc mạng tích chập đồ thị (GCN). 
-- Công trình sử dụng ST-GCN (https://arxiv.org/abs/1801.07455) làm backbone và gắn thêm mô đun TAM được lấy ý tưởng từ bài viết (https://doi.org/10.1049/cvi2.12017). Ngoài ra công trình còn áp dụng một phương pháp chuẩn hóa khung xương, điều này có thể khiến mô hình bị quá khớp dữ liệu nhưng với một số hành động nhất định thì việc chuẩn hóa khung xương có hiệu quả khả quan.
-- Dữ liệu: NTU RGB+D: contains 60 action classes
+## Reminder
+
+ST-GCN has transferred to [MMSkeleton](https://github.com/open-mmlab/mmskeleton),
+and keep on developing as an flexible open source toolbox for skeleton-based human understanding.
+You are welcome to migrate to new MMSkeleton.
+Custom networks, data loaders and checkpoints of old st-gcn are compatible with MMSkeleton.
+If you want to use old ST-GCN, please refer to [OLD_README.md](./OLD_README.md).
+
+This code base will soon be not maintained and exists as a historical artifact to supplement our AAAI papers on:
+
+> **Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition**, Sijie Yan, Yuanjun Xiong and Dahua Lin, AAAI 2018. [[Arxiv Preprint]](https://arxiv.org/abs/1801.07455)
+
+For more recent works please checkout MMSkeleton.
+  
